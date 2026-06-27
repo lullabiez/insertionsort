@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizer Insertion Sort - Adi Darmana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Visualisasi Algoritma Insertion Sort</h1>
+        <p class="subtitle">Tugas Struktur Data</p>
+
+        <!-- Informasi Mahasiswa -->
+        <div class="identity-card">
+            <table>
+                <tr>
+                    <td><strong>Nama</strong></td>
+                    <td>:</td>
+                    <td>Adi Darmana</td>
+                </tr>
+                <tr>
+                    <td><strong>NIM</strong></td>
+                    <td>:</td>
+                    <td>310125023966</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="control-panel">
+            <button id="btn-random">Acak Data Baru</button>
+            <button id="btn-sort" class="btn-primary">Mulai Insertion Sort</button>
+            <div class="speed-container">
+                <label for="speed">Kecepatan:</label>
+                <input type="range" id="speed" min="50" max="1000" value="300">
+            </div>
+        </div>
+
+        <div class="visualizer-container">
+            <div id="bar-container"></div>
+        </div>
+
+        <div class="status-panel">
+            <p id="status-text">Klik "Mulai Insertion Sort" untuk melihat proses pengurutan.</p>
+        </div>
+
+        <div class="info-section">
+            <h3>Cara Kerja Insertion Sort:</h3>
+            <p>Algoritma ini memilah elemen dari data mentah satu per satu, lalu menyisipkannya pada posisi yang tepat pada bagian data yang telah terurut.</p>
+            <ul>
+                <li><span class="box-color active-box"></span> Elemen yang sedang dibandingkan / digeser</li>
+                <li><span class="box-color current-box"></span> Key / Elemen yang sedang dicari posisinya</li>
+                <li><span class="box-color sorted-box"></span> Elemen yang sudah di posisi terurut sementara</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
